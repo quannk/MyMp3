@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#616161"
+    android:orientation="vertical"
+    android:padding="10dp"
+    >
+
+    <ImageView
+        android:id="@+id/iv_song"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_girl" />
+<LinearLayout android:layout_height="0dp"
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:orientation="horizontal"
+    >
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:layout_width="40dp"
+        android:layout_centerVertical="true"
+        android:layout_height="match_parent"
+        android:id="@+id/tv_time_play"
+        android:text="00:00"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center"
+        />
+    <SeekBar
+        android:id="@+id/seek_duration"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:progressDrawable="@drawable/progress_seekbar"
+        android:thumb="@drawable/thumb_seekbar"
+        />
+    <TextView
+        android:textColor="@android:color/white"
+        android:layout_gravity="center"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:id="@+id/tv_timemax"
+        android:text="00:11"
+        />
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:text="Song Name"
+        android:textColor="@android:color/white"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/tv_album"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:text="Artist- Anbulm"
+        android:textColor="@android:color/white"
+        android:textSize="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/gradient_bg"
+        android:gravity="center_horizontal">
+
+        <TableRow
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+
+            >
+
+            <ImageView
+                android:id="@+id/iv_pre"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_pre"
+                android:layout_gravity="center"
+
+                />
+
+            <ImageView
+                android:id="@+id/iv_pause"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center"
+
+                android:background="@drawable/ic_pause" />
+
+            <ImageView
+                android:id="@+id/iv_next"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_next"
+
+                />
+
+        </TableRow>
+
+    </LinearLayout>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="50dp"
+            android:src="@drawable/ic_back" />
+
+        <ImageView
+            android:id="@+id/iv_volum"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_volume_down_black_24dp" />
+
+        <SeekBar
+            android:id="@+id/seekbar_volume"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:thumb="@color/colorAccent" />
+        <ImageView
+            android:padding="5dp"
+            android:id="@+id/iv_shuffle"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_shuffle" />
+    </TableRow>
+
+</LinearLayout>

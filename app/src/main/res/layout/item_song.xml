@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@android:color/white"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:id="@+id/ln_itemsong"
+    >
+
+    <ImageView
+        android:id="@+id/iv_songitem"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:src="@drawable/ic_img"
+        android:scaleType="centerCrop"
+        />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_weight="7"
+        android:orientation="vertical"
+        android:padding="5dp"       >
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="name"
+            android:textColor="#E91E63"
+            android:textSize="10dp" />
+<TextView
+            android:id="@+id/tv_album"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="name"
+            android:textColor="#E91E63"
+            android:textSize="10dp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_playsong"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:src="@drawable/ic_play" />
+</LinearLayout>

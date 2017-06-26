@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/edt_seach"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#E91E63"
+            android:hint="..."
+            android:focusable="true"
+            android:textSize="10dp"
+            />
+        <ImageView
+            android:id="@+id/iv_seach"
+            android:layout_height="30dp"
+            android:layout_width="30dp"
+            android:background="@drawable/ic_seach"
+            android:layout_gravity="center"
+            />
+    </TableRow>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcv_listsong"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"></android.support.v7.widget.RecyclerView>
+</LinearLayout>
